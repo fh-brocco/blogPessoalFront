@@ -1,0 +1,60 @@
+.colorMenu {
+  background: #f7f6f5;
+  background: -webkit-linear-gradient(to right, #2B2B2B, #423F3E, #171010, #362222);
+  background: linear-gradient(to right, #2B2B2B, #423F3E, #171010, #362222);
+}
+
+.gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 98.9vw;
+  background: linear-gradient(45deg, #F9CEEE, #F9F3EE, #CCF3EE, #97C4B8);
+  background-size: 100%, 100%;
+  animation: colors 20s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.imgLogo {
+  width: 40px;
+  margin-left: 5%;
+  justify-content: inherit;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(to right, #2B2B2B, #423F3E, #171010, #362222);
+  background: linear-gradient(to right, #2B2B2B, #423F3E, #171010, #362222);
+  text-align: center;
+  align-items: baseline;
+  text-decoration: #f7f6f5;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.textColor {
+  color: #f7f6f5;
+}
