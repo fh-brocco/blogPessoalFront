@@ -12,8 +12,8 @@ arquivos de origem.
 
 ## Estrutura de código
 
-Execute `ng generate component component-name` para gerar um novo componente. Você também pode usar 
-`ng generate Directive|pipe|service|class|guard|interface|enum|module`.
+Execute `ng generate component component-name` para gerar um novo componente. 
+Você também pode usar `ng generate Directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Construir
 
