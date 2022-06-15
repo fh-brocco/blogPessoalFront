@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  user: User = new User()
+  user: User = new User
   confirmarSenha: string
   tipoUsuario: string
 
@@ -22,7 +22,7 @@ export class CadastrarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    window.scroll(0,0)
+    window.scroll(0, 0)
   }
 
   confirmaSenha(event: any) {
@@ -40,9 +40,9 @@ export class CadastrarComponent implements OnInit {
 
     if (this.user.senha != this.confirmarSenha) {
       this.alertas.showAlertDanger('As senhas não são correspondentes')
-    }else {
-      this.authService.cadastrar(this.user).subscribe((resp:User)=>{
-        this.user=resp
+    } else {
+      this.authService.cadastrar(this.user).subscribe((resp: User) => {
+        this.user = resp
         this.router.navigate(['/entrar'])
         this.alertas.showAlertSuccess('Usuário cadastrado com sucesso!')
       })

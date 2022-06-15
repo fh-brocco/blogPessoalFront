@@ -14,14 +14,14 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
-  token = 
-  {
-    headers: new HttpHeaders().set('authorization' , environment.token)
-  }
-  
+  token =
+    {
+      headers: new HttpHeaders().set('authorization', environment.token)
+    }
 
-  entrar(userLogin: UserLogin ): Observable<UserLogin> {
-    return this.http.post<UserLogin> ('http://localhost:8080/usuarios/logar', userLogin)
+
+  entrar(userLogin: UserLogin): Observable<UserLogin> {
+    return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar', userLogin)
   }
 
   cadastrar(user: User): Observable<User> {
@@ -36,14 +36,23 @@ export class AuthService {
     return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
   }
 
-  logado(){
+  logado() {
     let ok: boolean = false
 
-    if(environment.token != ''){
+    if (environment.token != '') {
       ok = true
     }
 
     return ok
   }
 
+  adm() {
+    let ok: boolean = false
+
+    if (environment.tipo == 'adm') {
+      ok = true
+    }
+
+    return ok
+  }
 }
